@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+  font-family: sans-serif;
+}
+
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  text-align: left;
+}
+
+#hasil {
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: gray;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Arithmetic</h1>
+    
+        <table>
+          <thead>
+            <tr>
+              <th>Variabel</th>
+              <th>Nilai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-variable="a">a</td>
+              <td data-value="5">5</td>
+            </tr>
+            <tr>
+              <td data-variable="b">b</td>
+              <td data-value="2">2</td>
+            </tr>
+            <tr>
+              <td data-variable="c">c</td>
+              <td data-value="1">1</td>
+            </tr>
+            <tr>
+              <td colspan="2">Hasil</td>
+              <td id="hasil" data-value="6">6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>

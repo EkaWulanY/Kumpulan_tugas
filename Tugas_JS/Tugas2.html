@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Live Code - JS</title>
+</head>
+<style>
+  .content {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table, tr, th, td {
+      border: solid 1px grey;
+      border-collapse: collapse;
+  } 
+
+  th, td { 
+      padding: 10px;
+  }
+
+
+  tr first-child, tr:nth-child(even) {
+    background-color: lightgray;
+  }
+
+  tr:hover {
+    background-color: gray;
+  }
+  img {
+      width: 200px;
+      height: 150px;
+    border-collapse: collapse;
+  }
+
+  button {
+    margin-top: 10%;
+  }
+ 
+</style>
+
+<body>
+  <h1 font-family:Arial >JavaScript Arithmatic</h1>
+  <div class="content">
+    <table border="1">
+      <tr>
+        <th>Variabel</th>
+        <th>Nilai</th>
+        <th rowspan="4"><img id="gambar" src="https://www.techfor.id/wp-content/uploads/2019/12/html.png"></th>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td id="nilai_a">5</td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td id="nilai_b">2</td>
+      </tr>
+      <tr>
+        <td>c</td>
+        <td id="nilai_c">1</td>
+      </tr>
+      <tr>
+        <td>Hasil</td>
+        <td id="hasil" onmouseover="tampil()" onmouseleave="hilang()"></td>
+      </tr>
+    </table>
+    <button onclick="ubahnilai()">Ubah Nilai</button> 
+  </div>
+
+  <script>
+    function hitung(a, b, c) {
+      return a + b - c;
+    }
+
+    function tampil() {
+      let a = parseInt(document.getElementById("nilai_a").innerHTML);
+      let b = parseInt(document.getElementById("nilai_b").innerHTML);
+      let c = parseInt(document.getElementById("nilai_c").innerHTML);
+      let hasil = hitung(a, b, c)
+      document.getElementById("hasil").innerHTML = hasil;
+    }
+    function hilang() {
+      document.getElementById("hasil").innerHTML = "";
+    }
+    function ubahnilai(){
+      let ubah1 = prompt("masukan nilai 'A'");
+      document.getElementById("nilai_a").innerHTML = ubah1
+      let ubah2 = prompt("masukan nilai 'B'");
+      document.getElementById("nilai_b").innerHTML = ubah2
+      let ubah3 = prompt("masukan nilai 'C'");
+      document.getElementById("nilai_c").innerHTML = ubah3
+    
+    document.getElementById("gambar")
+    .src = "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png";
+    }
+  </script>
+</body>
+
+</html>
