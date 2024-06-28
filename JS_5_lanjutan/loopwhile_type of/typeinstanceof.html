@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>Contoh Operator</h2>
+
+<p>Operator instanceof mengembalikan nilai true jika suatu objek adalah turunan dari objek tertentu:</p>
+
+<p id="demo"></p>
+
+<script> 
+const cars = ["Saab", "Volvo", "BMW"];
+
+document.getElementById("demo").innerHTML =
+(cars instanceof Array) + "<br>" + 
+(cars instanceof Object) + "<br>" +
+(cars instanceof String) + "<br>" +
+(cars instanceof Number);
+</script>
+
+</body>
+</html>

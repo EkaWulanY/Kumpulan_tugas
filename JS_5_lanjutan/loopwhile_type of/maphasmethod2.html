@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Maps</h2>
+<p>Menggunakan Map.has():</p>
+
+<p id="demo"></p>
+
+<script>
+// Membuat peta
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// Menghapus elemen
+fruits.delete("apples");
+
+document.getElementById("demo").innerHTML = fruits.has("apples");
+</script>
+
+</body>
+</html>
+
