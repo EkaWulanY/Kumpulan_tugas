@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Live Code - JS</title>
+</head>
+  
+<body>
+ <h1>JavaScript Arithmatic</h1>
+  <div>
+    <table border="1">
+      <tr>
+        <th>Variabel</th>
+        <th>Nilai</th>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td id="nilai_a">5</td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td id="nilai_b">2</td>
+      </tr>
+      <tr>
+        <td>c</td>
+        <td id="nilai_c">1</td>
+      </tr>
+      <tr>
+        <td>Hasil</td>
+        <td id="hasil" onclick="tampil()" ondblclick="hilang()"></td>
+      </tr>
+    </table>
+  </div>
+  
+  <script>
+    function hitung(a,b,c){
+      return a+b-c;
+    }
+    
+ function tampil(){
+    let a = parseInt(document.getElementById("nilai_a").innerHTML);
+     let b = parseInt(document.getElementById("nilai_b").innerHTML);
+     let c = parseInt(document.getElementById("nilai_c").innerHTML);
+     let hasil = hitung(a,b,c)
+     document.getElementById("hasil").innerHTML = hasil;
+ }
+function hilang(){
+  document.getElementById("hasil").innerHTML = "";
+}
+  </script>
+</body>
+</html>

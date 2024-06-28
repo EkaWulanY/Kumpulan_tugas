@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Dates</h1>
+<h2>JavaScript getMonth()</h2>
+<p>Kembalikan bulan sebagai angka.</p>
+<p>Anda dapat menggunakan serangkaian nama untuk mengembalikan bulan sebagai nama::</p>
+
+<p id="demo"></p>
+
+<script>
+const months = ["January","February","March","April","May","June",
+"July","August","September","October","November","December"];
+
+const d = new Date();
+let month = months[d.getMonth()];
+document.getElementById("demo").innerHTML = month;
+</script>
+
+</body>
+</html>

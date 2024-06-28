@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <style>
+            body{
+                background-image: url("images.jpg");
+                background-repeat: repeat;
+            }
+        </style>
+    </head>
+<body>
+
+<h2>JavaScript setSeconds()</h2>
+<p>The setSeconds() method sets the seconds of a date object (0-59):</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+d.setSeconds(30);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
